@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>caret</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="arrow/caret/menuGrey" transform="translate(1.000000, 1.000000)" fill="#6E8598" fill-rule="nonzero">
+            <path d="M6.44292998,2.43926275 C6.75261661,2.16418628 7.22666077,2.19224335 7.50173725,2.50192998 C7.77681372,2.81161661 7.74875665,3.28566077 7.43907002,3.56073725 L2.47035361,7.97415667 L-2.49808642,3.56072267 C-2.807765,3.28563714 -2.83580821,2.81159216 -2.56072267,2.50191358 C-2.28563714,2.192235 -1.81159216,2.16419179 -1.50191358,2.43927733 L2.47038296,5.96784333 L6.44292998,2.43926275 Z" id="caret" transform="translate(2.470500, 5.112074) rotate(-90.000000) translate(-2.470500, -5.112074) "></path>
+        </g>
+    </g>
+</svg>
