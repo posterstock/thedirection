@@ -8,16 +8,16 @@ networks:
 services:
 
   web:
-    image: registry.comenstat.com/thedirectioneu:latest
+    image: registry.comenstat.com/thedirectioneu:v0.0.8
     build: .
     labels:
       - traefik.enable=true
       - traefik.constraint-label=traefik
       - traefik.http.routers.thedirection.entrypoints=http
-      - traefik.http.routers.thedirection.rule=Host(`thedirection.eu`)
+      - traefik.http.routers.thedirection.rule=Host(`thedirection.org`)
       - traefik.http.routers.thedirection.middlewares=thedirection-https
       - traefik.http.middlewares.thedirection-https.redirectscheme.scheme=https
       - traefik.http.routers.thedirection-https.entrypoints=https
-      - traefik.http.routers.thedirection-https.rule=Host(`thedirection.eu`)
+      - traefik.http.routers.thedirection-https.rule=Host(`thedirection.org`)
       - traefik.http.routers.thedirection-https.tls=true
       - traefik.http.routers.thedirection-https.tls.certresolver=leresolver
