@@ -1,0 +1,110 @@
+.map-section {
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 203.7%;
+		background: url("#{$images}bg-02.svg") no-repeat;
+		clip-path: polygon(0 42.3%, 108.8% 0, 122033% 100%, 0 100%);
+		background-size: cover;
+		background-position: center;
+		z-index: -1;
+
+		@include breakpoint(md, max) {
+			height: 200.7%;
+			clip-path: polygon(0 17.7%, 124.8% 0, 122033% 100%, 0 100%);
+		}
+	}
+
+	.white-holder {
+		background: white;
+		border-radius: 0.7rem 0.7rem 0 0;
+	}
+
+	.flex-holder {
+		width: 100%;
+		padding: 5.5rem 8.5rem 4.6rem 8.5rem;
+		display: flex;
+		justify-content: space-between;
+		font-size: 2.4rem;
+		line-height: 1.16;
+		color: #49423e;
+
+		@include breakpoint(md, max) {
+			padding: 0.71rem 0.5rem 1.3rem 1.5rem;
+		}
+	}
+
+	.right-side {
+		@include breakpoint(md, max) {
+			display: none;
+		}
+
+		.img-holder {
+			max-width: 25.4rem;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	.link {
+		margin-bottom: 2.3rem;
+		display: inline-flex;
+		font-weight: 600;
+		text-decoration: none;
+
+		@include breakpoint(md, max) {
+			margin-bottom: 1.6rem;
+			font-size: 2rem;
+		}
+	}
+
+	.flag-block {
+		display: flex;
+		align-items: center;
+
+		.img-holder {
+			width: 7.1rem;
+			margin-right: 3rem;
+
+			@include breakpoint(md, max) {
+				display: flex;
+				width: 4.9rem;
+				margin-right: 1.4rem;
+			}
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		.text-holder {
+			@include breakpoint(md, max) {
+				font-size: 1.5rem;
+			}
+
+			p {
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.google-map {
+		min-height: 49.2rem;
+		border-radius: 0 0 0.7rem 0.7rem;
+
+		@include breakpoint(md, max) {
+			min-height: 41.4rem;
+		}
+	}
+}

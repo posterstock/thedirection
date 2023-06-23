@@ -1,0 +1,26 @@
+// vars
+$images: "../images/";
+$fonts: "../fonts/";
+
+// fonts
+$main-font: "Gilroy";
+
+// breakpoints
+$breakpoints: (
+	sm: 575px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1440px
+);
+
+// base vars
+$main-color: #40e4e2;
+$text-color-base: #828282;
+$body-bg: #f3f5f6;
+$font-family-base: $main-font;
+$font-size-base: 2rem;
+$font-weight-base: 400;
+$line-height-base: 1.15;
+$links-color-base: inherit;
+$transition: all 0.3s ease;

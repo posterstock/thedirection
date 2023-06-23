@@ -1,0 +1,47 @@
+.btn {
+	width: 100%;
+	max-width: 28.2rem;
+	min-height: 6.7rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 2.7rem 0.1rem 3.3rem;
+	font-weight: 500;
+	font-size: 1.6rem;
+	line-height: 1.18;
+	border-radius: 1rem;
+	border: none;
+
+	&-light {
+		background: rgba(25, 25, 27, 0.05);
+	}
+
+	&-dark {
+		color: #ffffff;
+		background: #19191b;
+	}
+
+	&-blue {
+		color: #ffffff;
+		background: #0045f5;
+	}
+
+	&.anim-to-right {
+		.icon-holder {
+			padding-top: 0.5rem;
+			transition: all 0.3s;
+		}
+
+		&:hover {
+			.icon-holder {
+				transform: translateX(1rem);
+			}
+		}
+	}
+}
+
+a {
+	&.btn {
+		text-decoration: none;
+	}
+}

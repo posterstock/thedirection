@@ -1,0 +1,33 @@
+@import "vars";
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("#{$fonts}Gilroy/Gilroy-Bold.woff2") format("woff2"), url("#{$fonts}Gilroy/Gilroy-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("#{$fonts}Gilroy/Gilroy-Semibold.woff2") format("woff2"), url("#{$fonts}Gilroy/Gilroy-Semibold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("#{$fonts}Gilroy/Gilroy-Extrabold.woff2") format("woff2"), url("#{$fonts}Gilroy/Gilroy-Extrabold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("#{$fonts}Gilroy/Gilroy-Regular.woff2") format("woff2"), url("#{$fonts}Gilroy/Gilroy-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

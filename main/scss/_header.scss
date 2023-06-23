@@ -1,0 +1,17 @@
+.header {
+	padding: 1.6rem 0 0.54rem 1.5rem;
+	background: white;
+
+	@include breakpoint(md, min) {
+		display: none;
+	}
+
+	.logo-holder {
+		width: 12.3rem;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}

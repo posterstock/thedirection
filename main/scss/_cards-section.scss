@@ -1,0 +1,173 @@
+.cards-section {
+	padding-bottom: 11rem;
+
+	@include breakpoint(md, max) {
+		padding-bottom: 4.2rem;
+	}
+
+	.row {
+		@include breakpoint(lg, min) {
+			@include set-gutter(4rem);
+		}
+
+		.col {
+			margin-bottom: 4rem;
+
+			@include breakpoint(lg, max) {
+				margin-bottom: 2.1rem;
+			}
+		}
+
+		.col-6 {
+			@include breakpoint(lg, max) {
+				width: 100%;
+			}
+		}
+	}
+
+	.card {
+		padding: 4.6rem 5.1rem 3.6rem 5.1rem;
+		height: 100%;
+		background: #ffffff;
+		box-shadow: -1rem -0.1rem 3rem rgba(0, 0, 0, 0.1), 10px 10px 30px rgba(0, 0, 0, 0.1);
+		border-radius: 0.7rem;
+
+		@include breakpoint(md, min) {
+			min-height: 48.1rem;
+		}
+
+		@include breakpoint(md, max) {
+			padding: 2.5rem 2rem 1.3rem 2.1rem;
+			min-height: 40.6rem;
+		}
+
+		.card-header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 2.6rem;
+
+			@include breakpoint(md, max) {
+				margin-bottom: 1.8rem;
+			}
+		}
+
+		.h3 {
+			margin-bottom: 0;
+			font-weight: 700;
+			color: #4f4f4f;
+			font-size: 2.8rem;
+			line-height: 1.17;
+
+			@include breakpoint(md, max) {
+				font-size: 2.2rem;
+			}
+		}
+
+		.card-meta {
+			margin: 0 0 3.5rem 0;
+			padding: 2.5rem 0;
+			list-style: none;
+			font-size: 1.8rem;
+			color: #4f4f4f;
+			border-top: solid 0.1rem #bdbdbd;
+			border-bottom: solid 0.1rem #bdbdbd;
+
+			@include breakpoint(md, max) {
+				margin-bottom: 2.7rem;
+				padding: 1.4rem 0;
+				font-size: 1.5rem;
+			}
+
+			.meta-item {
+				display: flex;
+				align-items: center;
+
+				&:not(:last-child) {
+					margin-bottom: 1.2rem;
+				}
+			}
+
+			.item-title {
+				display: inline-block;
+				min-width: 9rem;
+				margin-right: 2.7rem;
+				color: #bdbdbd;
+
+				@include breakpoint(md, max) {
+					min-width: 7.2rem;
+					margin-right: 2.2rem;
+				}
+			}
+
+			.link {
+				position: relative;
+				color: #2d9cdb;
+				text-decoration: none;
+
+				&::after {
+					content: "";
+					position: absolute;
+					left: 0;
+					bottom: -0.1rem;
+					width: 100%;
+					height: 0;
+					border-bottom: solid 0.1rem;
+					transition: $transition;
+				}
+
+				&:hover {
+					&::after {
+						left: 50%;
+						width: 0;
+					}
+				}
+			}
+		}
+
+		.text-holder {
+			@include breakpoint(md, max) {
+				font-size: 1.5rem;
+				line-height: 1.45;
+			}
+
+			&.blur {
+				filter: blur(0.4rem);
+			}
+		}
+
+		.stores-holder {
+			display: flex;
+			padding-left: 1.9rem;
+
+			@include breakpoint(md, max) {
+				margin-bottom: -0.1rem;
+				padding-left: 1.5rem;
+			}
+
+			a {
+				display: flex;
+				text-decoration: none;
+
+				@include breakpoint(md, max) {
+					width: 1.8rem;
+				}
+
+				img {
+					@include breakpoint(md, max) {
+						width: 100%;
+						height: auto;
+					}
+				}
+
+				&:not(:last-child) {
+					margin-right: 1.4rem;
+
+					@include breakpoint(md, max) {
+						margin-right: 1.1rem;
+					}
+				}
+			}
+		}
+	}
+}

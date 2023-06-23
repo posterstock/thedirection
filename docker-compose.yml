@@ -8,7 +8,7 @@ networks:
 services:
 
   web:
-    image: registry.comenstat.com/thedirectioneu:v0.0.8
+    image: registry.comenstat.com/thedirectioneu:v0.0.9
     build: .
     labels:
       - traefik.enable=true
