@@ -3,12 +3,13 @@ version: '3.5'
 networks:
   default:
     external:
-      name: comenstat_prod
+      name: thedirection
 
 services:
 
   web:
-    image: registry.comenstat.com/thedirectioneu:v0.0.11
+    image: registry.comenstat.com/thedirectioneu:v0.0.14
+    restart: always
     build: .
     labels:
       - traefik.enable=true
