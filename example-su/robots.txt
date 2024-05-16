@@ -1,6 +1,0 @@
-Host: https://www.soft-unity.ru
-Sitemap: https://www.soft-unity.ru/sitemap.xml
-
-User-Agent: Googlebot
-Allow: /*.js
-Allow: /*.css
