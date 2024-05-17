@@ -8,9 +8,8 @@ networks:
 services:
 
   web:
-    image: registry.comenstat.com/thedirectioneu:v0.0.14
+    image: ghcr.io/posterstock/thedirection:latest
     restart: always
-    build: .
     labels:
       - traefik.enable=true
       - traefik.constraint-label=traefik
